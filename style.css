@@ -22,106 +22,6 @@ body {
     padding: 0;
 }
 
-@media only screen and (max-width: 1024px) {
-    .navbar a {
-        display: block;
-        text-align: center;
-    }
-    .home-content h1 {
-        font-size: 2em;
-    }
-    .about-content p {
-        font-size: 1em;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-    .home-content h1 {
-        font-size: 1.5em;
-    }
-    .about-content p {
-        font-size: 0.9em;
-    }
-    .about-img img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
-
-@media only screen and (max-width: 480px) {
-    .home-content h1 {
-        font-size: 1.2em;
-    }
-    .about-content p {
-        font-size: 0.8em;
-    }
-    .about-img img {
-        width: 200px;
-        height: 200px;
-    }
-    .btn-box button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-
-
-
-@media only screen and (max-width: 1024px) {
-    .home-content h1 {
-        font-size: 2em;
-    }
-    .home-content p {
-        font-size: 1em;
-    }
-    .btn-box button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .img-box img {
-        width: 300px;
-        height: auto;
-    }
-}
-
-
-@media only screen and (max-width: 768px) {
-    .home-content h1 {
-        font-size: 1.5em;
-    }
-    .home-content p {
-        font-size: 0.9em;
-    }
-    .img-box img {
-        width: 250px;
-        height: auto;
-    }
-}
-
-
-@media only screen and (max-width: 480px) {
-    .home-content h1 {
-        font-size: 1.2em;
-    }
-    .home-content p {
-        font-size: 0.8em;
-    }
-    .img-box img {
-        width: 200px;
-        height: auto;
-    }
-    .btn-box button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
 
 /*-------------------WEBKIT-SCROLLBAR----------------------------------*/
 
@@ -140,6 +40,7 @@ body {
 }
 
 /*----------------------HEADER-CONTENGT----------------------------------*/
+
 .header{
     position:fixed;
     top:0;
@@ -213,6 +114,19 @@ body {
 
 
 
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 20px 8%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar a {
+        margin: 5px 0;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .header {
         padding: 15px 5%;
@@ -243,6 +157,8 @@ body {
         margin-top: 5px;
     }
 }
+
+ 
 /*----------------------HOME-CONTENGT----------------------------------*/
 
 .Home{
@@ -430,6 +346,57 @@ color: rgb(14, 184, 190);
 
 
 
+@media only screen and (max-width: 1024px) {
+    .skills {
+        flex-direction: column;
+        padding: 20px 8%;
+    }
+    .skill-content h1 {
+        font-size: 2em;
+    }
+    .skills ul li {
+        font-size: 16px;
+    }
+    .img-box2 img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .skills {
+        padding: 15px 5%;
+    }
+    .skill-content h1 {
+        font-size: 1.5em;
+    }
+    .skills ul li {
+        font-size: 14px;
+    }
+    .img-box2 img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .skills {
+        padding: 10px 2%;
+    }
+    .skill-content h1 {
+        font-size: 1.2em;
+    }
+    .skills ul li {
+        font-size: 12px;
+    }
+    .img-box2 img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
 /*----------------------ABOUT-CONTENGT----------------------------------*/
 
 .about{
@@ -578,7 +545,6 @@ font-size: 24px;;
 
 
 
-/* Styles for devices with a max width of 1024px (tablets and smaller) */
 @media only screen and (max-width: 1024px) {
     .edu {
         flex-direction: column;
@@ -599,7 +565,6 @@ font-size: 24px;;
     }
 }
 
-/* Styles for devices with a max width of 768px (small tablets and large phones) */
 @media only screen and (max-width: 768px) {
     .edu {
         padding: 8% 3%;
@@ -618,7 +583,7 @@ font-size: 24px;;
     }
 }
 
-/* Styles for devices with a max width of 480px (mobile phones) */
+
 @media only screen and (max-width: 480px) {
     .edu {
         padding: 5% 2%;
@@ -729,7 +694,6 @@ box-shadow: 0 0 25PX  rgb(169, 18, 199);
 }
 
 
-/* Styles for devices with a max width of 1024px (tablets and smaller) */
 @media only screen and (max-width: 1024px) {
     .contact-form h2 {
         font-size: 32px;
@@ -743,7 +707,7 @@ box-shadow: 0 0 25PX  rgb(169, 18, 199);
     }
 }
 
-/* Styles for devices with a max width of 768px (small tablets and large phones) */
+
 @media only screen and (max-width: 768px) {
     .contact-form h2 {
         font-size: 28px;
@@ -757,7 +721,7 @@ box-shadow: 0 0 25PX  rgb(169, 18, 199);
     }
 }
 
-/* Styles for devices with a max width of 480px (mobile phones) */
+
 @media only screen and (max-width: 480px) {
     .contact-form h2 {
         font-size: 24px;
@@ -867,7 +831,7 @@ border-bottom: 3px solid  rgb(0, 106, 255);
 
 
 
-/* Styles for devices with a max width of 1024px (tablets and smaller) */
+
 @media only screen and (max-width: 1024px) {
     .footer .social a {
         font-size: 20px;
@@ -879,7 +843,7 @@ border-bottom: 3px solid  rgb(0, 106, 255);
     }
 }
 
-/* Styles for devices with a max width of 768px (small tablets and large phones) */
+
 @media only screen and (max-width: 768px) {
     .footer .social a {
         font-size: 18px;
@@ -891,7 +855,7 @@ border-bottom: 3px solid  rgb(0, 106, 255);
     }
 }
 
-/* Styles for devices with a max width of 480px (mobile phones) */
+
 @media only screen and (max-width: 480px) {
     .footer .social a {
         font-size: 16px;
