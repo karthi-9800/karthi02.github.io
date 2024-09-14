@@ -9,9 +9,119 @@
 
 }
 
+
+
+
 html{
     scroll-behavior: smooth;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar a {
+        display: block;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 2em;
+    }
+    .about-content p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content h1 {
+        font-size: 1.5em;
+    }
+    .about-content p {
+        font-size: 0.9em;
+    }
+    .about-img img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.2em;
+    }
+    .about-content p {
+        font-size: 0.8em;
+    }
+    .about-img img {
+        width: 200px;
+        height: 200px;
+    }
+    .btn-box button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .home-content h1 {
+        font-size: 2em;
+    }
+    .home-content p {
+        font-size: 1em;
+    }
+    .btn-box button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .img-box img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .home-content h1 {
+        font-size: 1.5em;
+    }
+    .home-content p {
+        font-size: 0.9em;
+    }
+    .img-box img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.2em;
+    }
+    .home-content p {
+        font-size: 0.8em;
+    }
+    .img-box img {
+        width: 200px;
+        height: auto;
+    }
+    .btn-box button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
 
 /*-------------------WEBKIT-SCROLLBAR----------------------------------*/
 
@@ -43,6 +153,9 @@ html{
     align-items: center;
     z-index:100;
 }
+
+
+
 
 .logo{
     font-size: 30px;
@@ -98,6 +211,38 @@ html{
     color:white;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+    .navbar a {
+        font-size: 14px;
+    }
+    .contact {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 10px 2%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+    .contact {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
 /*----------------------HOME-CONTENGT----------------------------------*/
 
 .Home{
@@ -175,6 +320,45 @@ color: rgb(14, 184, 190);
     border-radius: 50%;
     width:300px;
     height: 300px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .Home {
+        padding: 15px 5%;
+    }
+    .home-content h1 {
+        font-size: 1.5em;
+    }
+    .home-content p {
+        font-size: 0.9em;
+    }
+    .img-box img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .Home {
+        padding: 10px 2%;
+    }
+    .home-content h1 {
+        font-size: 1.2em;
+    }
+    .home-content p {
+        font-size: 0.8em;
+    }
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-box img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /*----------------------SKILL-CONTENGT----------------------------------*/
@@ -287,6 +471,67 @@ letter-spacing: 2px;
 }
 
 
+
+
+@media only screen and (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        padding: 10% 5%;
+        gap: 5em;
+    }
+    .about-img img {
+        width: 250px;
+    }
+    .about-content h2 {
+        font-size: 28px;
+    }
+    .about-content h3 {
+        font-size: 42px;
+    }
+    .about-content p {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about {
+        padding: 8% 3%;
+    }
+    .about-img img {
+        width: 200px;
+    }
+    .about-content h2 {
+        font-size: 24px;
+    }
+    .about-content h3 {
+        font-size: 36px;
+    }
+    .about-content p {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .about {
+        padding: 5% 2%;
+    }
+    .about-img img {
+        width: 150px;
+    }
+    .about-content h2 {
+        font-size: 20px;
+    }
+    .about-content h3 {
+        font-size: 30px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+
 /*----------------------EDUCATION-CONTENGT----------------------------------*/
 
 
@@ -333,6 +578,64 @@ font-size: 24px;;
 
 
 
+/* Styles for devices with a max width of 1024px (tablets and smaller) */
+@media only screen and (max-width: 1024px) {
+    .edu {
+        flex-direction: column;
+        padding: 10% 5%;
+        gap: 5em;
+    }
+    .edu-img img {
+        width: 250px;
+    }
+    .edu-content h2 {
+        font-size: 28px;
+    }
+    .edu-content h3 {
+        font-size: 22px;
+    }
+    .edu-content p {
+        font-size: 20px;
+    }
+}
+
+/* Styles for devices with a max width of 768px (small tablets and large phones) */
+@media only screen and (max-width: 768px) {
+    .edu {
+        padding: 8% 3%;
+    }
+    .edu-img img {
+        width: 200px;
+    }
+    .edu-content h2 {
+        font-size: 24px;
+    }
+    .edu-content h3 {
+        font-size: 20px;
+    }
+    .edu-content p {
+        font-size: 18px;
+    }
+}
+
+/* Styles for devices with a max width of 480px (mobile phones) */
+@media only screen and (max-width: 480px) {
+    .edu {
+        padding: 5% 2%;
+    }
+    .edu-img img {
+        width: 150px;
+    }
+    .edu-content h2 {
+        font-size: 20px;
+    }
+    .edu-content h3 {
+        font-size: 18px;
+    }
+    .edu-content p {
+        font-size: 16px;
+    }
+}
 
 
 
@@ -425,6 +728,50 @@ box-shadow: 0 0 25PX  rgb(169, 18, 199);
     box-shadow: 0 0 20PX rgb(76, 76, 76);
 }
 
+
+/* Styles for devices with a max width of 1024px (tablets and smaller) */
+@media only screen and (max-width: 1024px) {
+    .contact-form h2 {
+        font-size: 32px;
+    }
+    .contact-form form {
+        max-width: 25em;
+    }
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        width: 350px;
+    }
+}
+
+/* Styles for devices with a max width of 768px (small tablets and large phones) */
+@media only screen and (max-width: 768px) {
+    .contact-form h2 {
+        font-size: 28px;
+    }
+    .contact-form form {
+        max-width: 20em;
+    }
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        width: 300px;
+    }
+}
+
+/* Styles for devices with a max width of 480px (mobile phones) */
+@media only screen and (max-width: 480px) {
+    .contact-form h2 {
+        font-size: 24px;
+    }
+    .contact-form form {
+        max-width: 18em;
+    }
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        width: 250px;
+    }
+}
+
+
 /*----------------------FOOTER-CONTENGT----------------------------------*/
 
 .footer{
@@ -516,4 +863,45 @@ border-bottom: 3px solid  rgb(0, 106, 255);
     text-align: center;
     font-size:12px;
     color:white;
+}
+
+
+
+/* Styles for devices with a max width of 1024px (tablets and smaller) */
+@media only screen and (max-width: 1024px) {
+    .footer .social a {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+    }
+    .footer ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Styles for devices with a max width of 768px (small tablets and large phones) */
+@media only screen and (max-width: 768px) {
+    .footer .social a {
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+    }
+    .footer ul li a {
+        font-size: 14px;
+    }
+}
+
+/* Styles for devices with a max width of 480px (mobile phones) */
+@media only screen and (max-width: 480px) {
+    .footer .social a {
+        font-size: 16px;
+        width: 25px;
+        height: 25px;
+    }
+    .footer ul li a {
+        font-size: 12px;
+    }
+    .footer ul li {
+        padding: 0 10px;
+    }
 }
